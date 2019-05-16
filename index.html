@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="/manifest.appcache">
 <head>
     <meta charset="UTF-8">
-    <title>测试</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="flexible" content="initial-dpr=2" />
+    <title>index</title>
 </head>
 <body>
-<div>测试使用</div>
+<div id="record"></div>
+
+<script src="record.js"></script>
 </body>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function (res) {
-            navigator.serviceWorker.register('/sw.js', {scope: '/'})
-                .then(function (registration) {
-                    // 注册成功
-                    alert('ServiceWorker registration successful with scope: '+registration.scope);
-                })
-                .catch(function (err) {
-                    // 注册失败:(
-                    alert('ServiceWorker registration failed: '+err);
-                });
-        });
-    }
-</script>
 </html>

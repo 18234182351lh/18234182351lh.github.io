@@ -1,0 +1,10 @@
+CACHE MANIFEST
+#VERSION
+
+# 缓存文件
+CACHE:
+index.html
+record.js
+# 加载文件
+NETWORK：
+
