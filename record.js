@@ -1,1 +1,1 @@
-document.getElementById('record').innerText='CACHE：3'
+document.getElementById('record').innerText='CACHE：4'
